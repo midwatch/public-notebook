@@ -14,6 +14,7 @@ RSYNC_PATH_LOCAL = "build/www/"
 RSYNC_PATH_REMOTE = "remote path"
 
 TEMPLATE_ROOT = "project.d/templates"
+TEMPLATE_NAME = "index_table.rst.jinja"
 
 ROOT_DIR = Path(__file__).parent
 
@@ -81,9 +82,16 @@ def build(ctx):
     """
     Build html pages.
     """
+    notebook_opts = (
+        f'--template-dir {TEMPLATE_ROOT}',
+        f'--template-name {TEMPLATE_NAME}',
+        'notebook/',
+        'build/rst/index.rst'
+        )
+
     ctx.run('mkdir build')
     ctx.run('cp -r notebook build/rst')
-    ctx.run(f'sphinx_notebook build --template-dir {TEMPLATE_ROOT} notebook/ build/rst/index.rst')
+    ctx.run('sphinx_notebook build {}'.format(' '.join(notebook_opts)))
     ctx.run('sphinx-build -b html build/rst build/www')
 
 
