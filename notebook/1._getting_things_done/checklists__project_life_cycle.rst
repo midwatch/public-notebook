@@ -1,7 +1,7 @@
 .. _xuTo0aymnZ:
 
 =======================================
-Project File Cycle
+Project Life Cycle
 =======================================
 
 Prerequisites
