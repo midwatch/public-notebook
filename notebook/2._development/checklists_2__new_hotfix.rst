@@ -7,39 +7,35 @@ New Hotfix
 Prerequisites
 =======================================
 
-* TBD
+* Application breaking bug
+* Major documentation error
 
 
 Tasks
 =======================================
 
-Task 1
----------------------------------------
+.. code-block:: console
 
-#. [ _ ] Step 1
-#. [ _ ] Step N
+    $ inv scm.pull
+    $ git flow hotfix start x.y.z
+    $ inv bumpversion patch
 
+* Root cause analysis
+* Write failing regression test
+* Implement fix
+* Update CHANGELOG.rst
 
-Task N
----------------------------------------
+.. code-block:: console
 
-#. [ _ ] Step 1
-#. [ _ ] Step N
+    $ inv test
+    $ inv format
+    $ inv lint
+    $ inv test
+    $ inv release
+    $ git flow release finish x.y.z
+    $ inv scm.push
 
-
-Detailed Instructions
-=======================================
-
-Task 1
----------------------------------------
-
-* TBD
-
-
-Task 2
----------------------------------------
-
-* TBD
+* Close issue
 
 
 Common Errors & Ommisions
