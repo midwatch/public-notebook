@@ -41,6 +41,16 @@ searched or copy-pasted.
 * `GitHub <https://github.com/jbarlow83/OCRmyPDF>`_
 
 
+Parse
+===========================================================
+
+Parse strings using a specification based on the Python format() syntax.
+
+parse() is the opposite of format()
+
+* `GitHub <https://github.com/r1chardj0n3s/parse>`_
+
+
 Python-Readability
 ===========================================================
 
