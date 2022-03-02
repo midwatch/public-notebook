@@ -14,6 +14,7 @@ RSYNC_PATH_LOCAL = "build/www/"
 RSYNC_PATH_REMOTE = "remote path"
 
 TEMPLATE_ROOT = "project.d/templates"
+TEMPLATE_NAME = "index_table.rst.jinja"
 
 ROOT_DIR = Path(__file__).parent
 
@@ -81,11 +82,34 @@ def build(ctx):
     """
     Build html pages.
     """
+    notebook_opts = (
+        f'--template-dir {TEMPLATE_ROOT}',
+        f'--template-name {TEMPLATE_NAME}',
+        'notebook/',
+        'build/rst/index.rst'
+        )
+
     ctx.run('mkdir build')
     ctx.run('cp -r notebook build/rst')
-    ctx.run(f'sphinx_notebook build --template-dir {TEMPLATE_ROOT} notebook/ build/rst/index.rst')
+    ctx.run('sphinx_notebook build {}'.format(' '.join(notebook_opts)))
     ctx.run('sphinx-build -b html build/rst build/www')
 
+
+@task
+def new(ctx, template, path):
+    """
+    Add a new note from a template.
+    """
+    # template = template + '.rst.jinja'
+
+    opts = (
+        f'--template-dir {TEMPLATE_ROOT}',
+        f'--template-name {template}.rst.jinja',
+        path
+        )
+
+    # ctx.run(f'sphinx_notebook new note --template-dir {TEMPLATE_ROOT} --template-name {template} {path}')
+    ctx.run('sphinx_notebook new note {}'.format(' '.join(opts)))
 
 @task
 def init(ctx):
@@ -101,13 +125,22 @@ def init(ctx):
 @task(pre=[clean, build])
 def release(ctx):
     """
-    Make a release of the python package to pypi
+    Build notebook and release to Google App Engine
     """
-    # ctx.run(f'rsync -r --delete {RSYNC_PATH_LOCAL} {RSYNC_USER}@{RSYNC_HOST}:{RSYNC_PATH_REMOTE}')
+    args = [
+        ctx['secrets']['pub']['user_name'],
+        '--key-file={}'.format(Path.home() / ctx['secrets']['pub']['user_key']),
+        '--project={}'.format(ctx['secrets']['pub']['project'])
+        ]
+
+    cmd = 'gcloud auth activate-service-account {}'.format(' '.join(args))
+    ctx.run(cmd)
+    ctx.run('gcloud app deploy')
+
 
 scm = Collection()
 scm.add_task(scm_push, name="push")
 scm.add_task(scm_status, name="status")
 
-ns = Collection(build, clean, init, release)
+ns = Collection(build, clean, init, new, release)
 ns.add_collection(scm, name="scm")

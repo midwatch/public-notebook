@@ -1,5 +1,5 @@
 ===================
-My New Notebook
+Public Notebook
 ===================
 
 {% set headers = (
@@ -9,6 +9,12 @@ My New Notebook
     '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
     )
 %}
+
+::
+
+    Never memorize something that you can look up.
+
+                                   Albert Einstein
 
 {% for node in nodes -%}
 
@@ -32,7 +38,11 @@ My New Notebook
 {% else %}
 {% for col in row -%}
 {% if loop.first %}
+{% if col %}
 {{ "   * - :doc:`%s <%s>`"|format(col.title, col.target) }}
+{% else %}
+   * -
+{% endif %}
 {% elif not col %}
      -
 {% else %}
