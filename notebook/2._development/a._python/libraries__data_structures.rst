@@ -4,8 +4,17 @@
 Data Structures
 =======================================
 
+Anytree
+=======================================
+
+Simple, lightweight and extensible Tree data structure.
+
+* `GitHub <https://github.com/c0fec0de/anytree>`_
+* `Docs <https://anytree.readthedocs.io/en/latest/>`_
+
+
 Attrs
-===========================================================
+=======================================
 
 attrs is the Python package that will bring back the joy of writing classes by
 relieving you from the drudgery of implementing object protocols (aka dunder
@@ -24,7 +33,7 @@ methods).
 
 
 Transitions
-===========================================================
+=======================================
 
 A lightweight, object-oriented state machine implementation.
 
