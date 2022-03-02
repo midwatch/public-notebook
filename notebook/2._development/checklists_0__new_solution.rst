@@ -7,39 +7,76 @@ New Solution
 Prerequisites
 =======================================
 
-* TBD
+* Actionable use case(s)
+* Github account
+* Github repo name
+* Optional
+
+  * PyPi account
+  * PyPi package name
 
 
 Tasks
 =======================================
 
-Task 1
+Bootstrap Repo
 ---------------------------------------
 
-#. [ _ ] Step 1
-#. [ _ ] Step N
+* Create new public or private repo on Github
+
+.. code-block:: console
+
+    $ cd ~/dev
+    $ cookiecutter gh:{user}/{repo-name}
+    $ cd {github-slug}
+    $ vagrant up
+    $ vagrant reload
+    $ vagrant ssh
+    $ cd /vagrant
+    $ inv init
 
 
-Task N
+**Standard Cookie Cutters:**
+
+.. list-table::
+   :header-rows: 1
+
+   * - Name
+     - Repo
+     - Comments
+   * - midwatch/cc-py3-pkg
+     - `Github <https://github.com/midwatch/cc-py3-pkg>`_
+     - Python 3 CLI application
+
+
+Verify Tool Chain
 ---------------------------------------
 
-#. [ _ ] Step 1
-#. [ _ ] Step N
+Release and install an absoulte minimal solution to prove release tool chain.
+
+**Inital Release:**
+
+.. code-block:: console
+
+    $ git flow release start 0.1.0
+    $ inv bumpversion minor
+    $ inv release
+    $ git flow release finish 0.1.0
+    $ inv scm.push
 
 
-Detailed Instructions
-=======================================
+**Test Install:**
 
-Task 1
----------------------------------------
+In a new terminal:
 
-* TBD
+.. code-block:: console
 
-
-Task 2
----------------------------------------
-
-* TBD
+    $ cd ~/dev/dev-test-box
+    $ vagrant destroy --force
+    $ vagrant up
+    $ vagrant reload
+    $ vagrant ssh
+    $ pipx install {PyPi Package Name}
 
 
 Common Errors & Ommisions
