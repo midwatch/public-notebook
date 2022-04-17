@@ -13,7 +13,7 @@ A set of libraries for pluggable business logic components.
 * `Github <https://github.com/dry-python>`_
 
 
-dry-python/classes
+classes
 ---------------------------------------
 
 Smart, pythonic, ad-hoc, typed polymorphism for Python.
@@ -22,7 +22,7 @@ Smart, pythonic, ad-hoc, typed polymorphism for Python.
 * `Docs <https://classes.readthedocs.io/en/latest/>`_
 
 
-dry-python/returns
+returns
 ---------------------------------------
 
 Make your functions return something meaningful, typed, and safe!
