@@ -51,6 +51,26 @@ parse() is the opposite of format()
 * `GitHub <https://github.com/r1chardj0n3s/parse>`_
 
 
+PDFMiner
+===========================================================
+
+It is a tool for extracting information from PDF documents.
+
+* `Github <https://github.com/pdfminer/pdfminer.six>`_
+* `Docs <https://pdfminersix.readthedocs.io/en/latest/>`_
+
+
+PyPDF4
+===========================================================
+
+PyPDF4 is a pure-python PDF library capable of splitting, merging together,
+cropping, and transforming the pages of PDF files. It can also add custom data,
+viewing options, and passwords to PDF files. It can retrieve text and metadata
+from PDFs as well as merge entire files together.
+
+* `GitHub <https://github.com/claird/PyPDF4>`_
+
+
 Python-Readability
 ===========================================================
 
