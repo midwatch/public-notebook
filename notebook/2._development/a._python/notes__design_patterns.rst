@@ -15,7 +15,6 @@ Creational
 * Object pool
 * Prototype
 * Resource acquisition is initialization (RAII)
-* Singleton
 
 
 Factory method
@@ -87,6 +86,28 @@ implementations of a common interface.
 
 * `The Factory Pattern in Python // Separate creation from use <https://youtu.be/s_4ZrtQs8Do>`_
 
+
+Singleton
+---------------------------------------
+
+Python modules are Singletons because there is only one instance of each module,
+and changes made to the module object get reflected everywhere.
+
+.. code-block:: python
+
+    # https://docs.python.org/3/faq/programming.html#how-do-i-share-global-variables-across-modules
+
+    # config.py:
+    x = 0   # Default value of the 'x' configuration setting
+
+    # mod.py:
+    import config
+    config.x = 1
+
+    # main.py
+    import config
+    import mod
+    print(config.x)
 
 
 Structural
