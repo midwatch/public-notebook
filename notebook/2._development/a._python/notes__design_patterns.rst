@@ -116,7 +116,6 @@ Behavioral
 * Mediator
 * Memento
 * Null object
-* Observer or Pub/Sub
 * Servant
 * Specification
 * State
@@ -187,6 +186,59 @@ action or trigger an event at a later time.
 * `Implementing Undo And Redo With The Command Design Pattern <https://youtu.be/FM71_a3txTo>`_
 * `How To Make The Command Pattern More Flexible With One Simple Change <https://youtu.be/rGu33Tk0tCM>`_
 
+
+Observer
+---------------------------------------
+
+aka Publisher/Subscriber
+
+Allows multiple subscribers to register receive events from a single publisher.
+
+Provides for loose coupling between publishers and subscribers.
+
+.. code-block:: python
+
+    # https://github.com/arjancodes/betterpython
+    # 4 - Observer Pattern - api v2
+
+    subscribers = dict()
+
+    def subscribe(event_type: str, fn):
+        if not event_type in subscribers:
+            subscribers[event_type] = []
+        subscribers[event_type].append(fn)
+
+    def post_event(event_type: str, data):
+        if not event_type in subscribers:
+            return
+        for fn in subscribers[event_type]:
+            fn(data)
+
+    def handle_user_registered_event(user):
+        post_slack_message("sales",
+            f"{user.name} has registered with email address {user.email}.
+                Please spam this person incessantly.")
+
+    def setup_slack_event_handlers():
+        subscribe("user_registered", handle_user_registered_event)
+        subscribe("user_upgrade_plan", handle_user_upgrade_plan_event)
+
+    def register_new_user(name: str, password: str, email: str):
+        user = create_user(name, password, email)
+        post_event("user_registered", user)
+
+
+    setup_slack_event_handlers()
+    register_new_user("Arjan", "BestPasswordEva", "hi@arjanegges.com")
+
+
+**Docs:**
+
+* `Django Signals <https://docs.djangoproject.com/en/4.0/topics/signals/>`_
+
+**Tutorials:**
+
+* `Observer Pattern Tutorial: I NEVER knew events were THIS powerful <https://youtu.be/oNalXg67XEE>`_
 
 
 Concurrency
