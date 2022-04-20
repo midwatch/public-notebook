@@ -111,7 +111,6 @@ Behavioral
 
 * Blackboard
 * Chain of responsibility
-* Command
 * Intepreter
 * Interator
 * Mediator
@@ -124,6 +123,70 @@ Behavioral
 * Strategy
 * Template method
 * Visitor
+
+
+Command
+---------------------------------------
+
+The command pattern is used to encapsulate all information needed to perform an
+action or trigger an event at a later time.
+
+.. code-block:: python
+
+    # https://github.com/ArjanCodes/2021-command-transactions
+    # with_transaction
+
+    @dataclass
+    class BankController:
+        ledger: list[Transaction] = field(default_factory=list)
+        current: int = 0
+
+        def register(self, transaction: Transaction) -> None:
+            del self.ledger[self.current :]
+            self.ledger.append(transaction)
+            self.current += 1
+
+        def undo(self) -> None:
+            if self.current > 0:
+                self.current -= 1
+
+        def redo(self) -> None:
+            if self.current < len(self.ledger):
+                self.current += 1
+
+        def compute_balances(self) -> None:
+            for transaction in self.ledger[: self.current]:
+                transaction.execute()
+
+    @dataclass
+    class Deposit:
+        account: Account
+        amount: int
+
+        @property
+        def transfer_details(self) -> str:
+            return f"${self.amount/100:.2f} to account {self.account.name}"
+
+        def execute(self) -> None:
+            self.account.deposit(self.amount)
+            print(f"Deposited {self.transfer_details}")
+
+
+    bank = Bank()
+    controller = BankController()
+
+    account1 = bank.create_account("ArjanCodes")
+
+    controller.register(Deposit(account1, 100000))
+    controller.undo()
+    controller.redo()
+
+
+**Tutorials:**
+
+* `Implementing Undo And Redo With The Command Design Pattern <https://youtu.be/FM71_a3txTo>`_
+* `How To Make The Command Pattern More Flexible With One Simple Change <https://youtu.be/rGu33Tk0tCM>`_
+
 
 
 Concurrency
