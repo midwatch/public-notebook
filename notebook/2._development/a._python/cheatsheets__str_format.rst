@@ -22,12 +22,16 @@ PEP 498 - Literal String Interpolation; new in 3.6.
 
     name = "Eric"
     age = 74
+
     f"Hello, {name}, You are {age}"
-    # 'Hello, Eric. You are 74.'
+        'Hello, Eric. You are 74.'
+
+    f"{name = }"    # Spaces are preserved
+        "name = 'Eric'"
 
     # Arbitrary Expressions
     f"{2 * 37}
-    # '74'
+        '74'
 
     # Call functions
     def to_lowercase(input):
@@ -35,17 +39,23 @@ PEP 498 - Literal String Interpolation; new in 3.6.
 
     name = "Eric Idle"
     f"{to_lowercase(name)} is funny."
-    # 'eric idle is funny.'
+        'eric idle is funny.'
 
     f"{name.lower()} is funny."
-    'eric idle is funny.'
+        'eric idle is funny.'
+
+    # Datetime
+    now = datetime.datetime.utcnow()
+    f'{now = :%Y-%m-%d}'
+        'now = 2022-04-21'
 
     # Multiline f-Strings
     message = f"Hi {name}. " \
               f"You are a {profession}. " \
               f"You were in {affiliation}."
 
-    # 'Hi Eric. You are a comedian. You were in Monty Python.'
+        'Hi Eric. You are a comedian. You were in Monty Python.'
+
 
 **Format Specifiers:**
 
@@ -60,9 +70,9 @@ PEP 498 - Literal String Interpolation; new in 3.6.
     for name, phone in table.items():
         print(f'{name:10} ==> {phone:10d}')
 
-    # Sjoerd     ==>       4127
-    # Jack       ==>       4098
-    # Dcab       ==>       7678
+        Sjoerd     ==>       4127
+        Jack       ==>       4098
+        Dcab       ==>       7678
 
 Other modifiers can be used to convert the value before it is formatted:
 
