@@ -10,6 +10,7 @@ state that affects the output produced for a given input.
 
 Python functions are first class objects of type callable.
 
+.. _UiQKzwRTeu:
 Strategy Pattern
 =======================================
 
