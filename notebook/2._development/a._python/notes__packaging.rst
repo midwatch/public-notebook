@@ -113,6 +113,15 @@ Steps Required:
 #. --name The name of the generated binary
 
 
+Pip Tools
+=======================================
+
+A set of command line tools to help you keep your pip-based packages fresh, even
+when you've pinned them. You do pin them, right?
+
+* `GitHub <https://github.com/jazzband/pip-tools>`_
+
+
 References
 =======================================
 

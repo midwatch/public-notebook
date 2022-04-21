@@ -20,6 +20,15 @@ automatically separated into sections and by type.
 * `Docs <https://pycqa.github.io/isort/>`_
 
 
+Black Code Formatter
+---------------------------------------
+
+Black is the uncompromising Python code formatter.
+
+* `Docs <https://black.readthedocs.io/en/stable/>`_
+* `Github <https://github.com/psf/black>`_
+
+
 yapf
 ---------------------------------------
 
