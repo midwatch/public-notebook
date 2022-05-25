@@ -42,3 +42,20 @@ objgraph is a module that lets you visually explore Python object graphs.
 
 * `Homepage <https://mg.pov.lt/objgraph/>`_
 
+
+Seaborn
+=======================================
+
+Seaborn is a Python data visualization library based on matplotlib. It provides
+a high-level interface for drawing attractive and informative statistical
+graphics.
+
+* `Homepage <https://seaborn.pydata.org/>`_
+* `Docs <https://seaborn.pydata.org/tutorial.html>`_
+
+  * `FAQ <https://github.com/mwaskom/seaborn/wiki/Frequently-Asked-Questions-(FAQs)>`_
+
+* `GitHub <https://github.com/mwaskom/seaborn>`_
+* Tutorials
+
+  * `Seaborn Is The Easier Matplotlib <https://youtu.be/ooqXQ37XHMM>`_
