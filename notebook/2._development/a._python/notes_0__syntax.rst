@@ -4,6 +4,8 @@
 Basic Syntax
 =======================================
 
+`Built-in Functions <https://docs.python.org/3/library/functions.html>`_
+
 `Built-in Types <https://docs.python.org/3/library/stdtypes.html>`_
 
 * Truth value testing
@@ -15,6 +17,8 @@ Basic Syntax
 
 Exceptions
 =======================================
+
+`Built-in Exceptions <https://docs.python.org/3/library/exceptions.html>`_
 
 .. code-block:: python
 
