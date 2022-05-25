@@ -12,6 +12,7 @@ Classes
         __slots__ == 'x', 'y', 'z'
         # Saves on memory usage when you have a lot of really small objects
         # removes __dict__ atrribute
+        # provides ~ 20% speed boost on get/set calls
         # can't add new attributes at run time
 
         @staticmethod
