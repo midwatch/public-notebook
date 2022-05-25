@@ -5,10 +5,29 @@ Syntax Sugar
 =======================================
 
 
-**Underscores in Numeric Literals:**
+**Tuple Unpacking:**
 
-PEP 515 adds the ability to use underscores in numeric literals for improved
-readability.
+.. code-block:: python
+
+    x, y, z = 1, 2, 3
+    print(f'x: {x} y: {y} z: {z}')
+        # x: 1 y: 2 z: 3
+
+    my_tuple = 1, 2
+    x, y = my_tuple
+
+    def my_func():
+        return (1, 2, 3)
+
+    x, y, z = my_func()
+    print(f'x: {x} y: {y} z: {z}')
+        # x: 1 y: 2 z: 3
+
+    x, _, z = my_func()
+        # Throw away values you don't care about
+
+
+**Underscores in Numeric Literals:**
 
 .. code-block:: python
 
@@ -35,4 +54,5 @@ readability.
 References
 =======================================
 
+#. `Unpacking a Tuple in Python <https://www.geeksforgeeks.org/unpacking-a-tuple-in-python/>`_
 #. `PEP 515 – Underscores in Numeric Literals <https://peps.python.org/pep-0515/>`_
