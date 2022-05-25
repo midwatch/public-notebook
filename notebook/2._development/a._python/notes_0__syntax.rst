@@ -90,6 +90,18 @@ If/Then
         pass
 
 
+Looping Speed
+---------------------------------------
+
+The fastest way to loop in Python is to not loop in Python.
+
+#. Mathmatically compute the answer ahead of time if possible
+#. Have the work done in a pure c function (numpy)
+#. Use Python builtins like sum or map
+#. For loop/comprehension
+#. While loop
+
+
 For Loop
 ---------------------------------------
 
@@ -232,3 +244,4 @@ References
 #. `25 nooby Python habits you need to ditch <https://youtu.be/qUeud6DvOWI>`_
 #. `Exceptional logging of exceptions in Python <https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/>`_
 #. `Python Operators <https://mindmajix.com/python/basic-operators-in-python>`_
+#. `The Fastest Way to Loop in Python - An Unfortunate Truth <https://youtu.be/Qgevy75co8c>`_
