@@ -41,7 +41,7 @@ Exceptions
         print(err)          # __str__ allows args to be printed directly
 
     else:
-        # Code that is executed if thy try clause does not raise an exception
+        # Code that is executed if the try clause does not raise an exception
         pass
 
     finally:
