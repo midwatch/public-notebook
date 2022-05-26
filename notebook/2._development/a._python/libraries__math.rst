@@ -4,6 +4,18 @@
 Math
 =======================================
 
+Sage Math
+=======================================
+
+SageMath builds on top of many existing open-source packages: NumPy, SciPy,
+matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. Access their combined
+power through a common, Python-based language or directly via interfaces or
+wrappers.
+
+
+* `Homepage <https://www.sagemath.org/index.html>`_
+
+
 SymPY
 =======================================
 
