@@ -32,6 +32,7 @@ attrs is the Python package that will bring back the joy of writing classes by
 relieving you from the drudgery of implementing object protocols (aka dunder
 methods).
 
+* `Github <https://github.com/python-attrs/attrs>`_
 
 **Pydantic:**
 
@@ -39,12 +40,14 @@ Data validation and settings management using python type annotations. pydantic
 enforces type hints at runtime, and provides user friendly errors when data is
 invalid.
 
+* `Gitub <https://github.com/samuelcolvin/pydantic>`_
 
 
 Tutorials
 =======================================
 
 #. `Python dataclasses will save you HOURS, also featuring attrs <https://youtu.be/vBH6GRJ1REM>`_
+#. `This Is Why Python Data Classes Are Awesome <https://youtu.be/CvQ7e6yUtnw>`_
 #. `Do we still need dataclasses? // PYDANTIC tutorial <https://youtu.be/Vj-iU-8_xLs>`_
 
 

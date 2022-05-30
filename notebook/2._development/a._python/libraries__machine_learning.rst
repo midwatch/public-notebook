@@ -22,4 +22,7 @@ machine learning software library.
 References
 =======================================
 
-#. TBD
+#. `But what is a neural network? | Chapter 1, Deep learning <https://youtu.be/aircAruvnKk>`_
+#. `Gradient descent, how neural networks learn | Chapter 2, Deep learning <https://youtu.be/IHZwWFHWa-w>`_
+#. `What is backpropagation really doing? | Chapter 3, Deep learning <https://youtu.be/Ilg3gGewQ5U>`_
+#. `Backpropagation calculus | Chapter 4, Deep learning <https://youtu.be/tIeHLnjs5U8>`_
