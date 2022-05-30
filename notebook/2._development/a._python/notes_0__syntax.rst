@@ -89,6 +89,27 @@ If/Then
     else:
         pass
 
+**Anti-Patterns:**
+
+.. code-block:: python
+
+    # Nested if statements, use guard clauses instead.
+
+    def my_function(wifi, login, admin):
+        if not wifi:
+            log.debug('Must be connected to WiFi')
+            return
+
+        if not login:
+            log.debug('Must login to your account')
+            return
+
+        if not admin:
+            log.debug('Must be an admin')
+            return
+
+        do_something()
+
 
 Looping Speed
 ---------------------------------------
@@ -245,3 +266,4 @@ References
 #. `Exceptional logging of exceptions in Python <https://www.loggly.com/blog/exceptional-logging-of-exceptions-in-python/>`_
 #. `Python Operators <https://mindmajix.com/python/basic-operators-in-python>`_
 #. `The Fastest Way to Loop in Python - An Unfortunate Truth <https://youtu.be/Qgevy75co8c>`_
+#. `Nesting "If Statements" Is Bad. Do This Instead. <https://youtu.be/ZzwWWut_ibU>`_

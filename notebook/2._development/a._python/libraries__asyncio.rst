@@ -14,8 +14,23 @@ asyncio (PEP 3156) Redis client library.
 The library is intended to provide simple and clear interface to Redis based on asyncio.
 
 * `Docs <https://aioredis.readthedocs.io/en/latest/>`_
-* `GitHub <https://github.com/aio-libs/aioredis>`_
+* `Github <https://github.com/aio-libs/aioredis>`_
 * `Google Forum <https://groups.google.com/forum/#!forum/aio-libs>`_
+
+
+Beanie
+=======================================
+
+Beanie - is an Asynchronous Python object-document mapper (ODM) for MongoDB,
+based on Motor and Pydantic.
+
+Data and schema migrations are supported by Beanie out of the box.
+
+* `Docs <https://roman-right.github.io/beanie/>`_
+* `Github <https://github.com/roman-right/beanie>`_
+* Examples
+
+  * `fastapi-cosmos <https://github.com/tonybaloney/ants-azure-demos/tree/master/fastapi-cosmos>`_
 
 
 Tortoise ORM

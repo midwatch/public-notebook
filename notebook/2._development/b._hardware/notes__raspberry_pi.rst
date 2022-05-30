@@ -213,6 +213,8 @@ Accessories
 ======================================
 
 #. `USB to TTL Serial Cable <https://www.adafruit.com/product/954>`_
+#. `Secure Boot Flash Drive <https://www.sparkfun.com/products/16901>`_
+
 
 References
 ======================================
