@@ -20,6 +20,7 @@ Printers
 
 * `TOP 5 BEST METAL 3D PRINTERS <https://youtu.be/HT2aodYuKus>`_
 * `THE PERFECT 3D PRINTER FOR WARHAMMER 40K! <https://youtu.be/hivnFEiueyY>`_
+* `Elegoo Saturn 2 8K Resin 3D Printer <https://youtu.be/PFGrrfExsAM>`_
 
 
 Tutorials
