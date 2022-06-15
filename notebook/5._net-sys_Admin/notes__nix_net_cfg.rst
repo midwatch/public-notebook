@@ -1,17 +1,11 @@
-.. _9V-ot3boP4:
+.. _BamiyZ3Yoc:
 
 =======================================
-Linux - Generic
+NIX Net Config
 =======================================
-
-Management
-=======================================
-
-Network Cfg
----------------------------------------
 
 IP
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================================
 
 .. code-block:: console
 
@@ -52,51 +46,6 @@ IP
   * DELAY – A packet has been sent to the stale neighbour and the kernel is waiting for confirmation.
   * REACHABLE – The neighbour is valid and apparently reachable.
 
-
-User
----------------------------------------
-
-.. code-block:: console
-
-    $ sudo adduser <user name>
-
-    $ sudo usermod -aG dialout <user name>      # access to serial ports
-    $ sudo usermod -aG docker <user name>       # access to docker daemon
-    $ sudo usermod -aG sudo <user name>
-
-
-Network File Systems
-=======================================
-
-CIFS/SMB
----------------------------------------
-
-.. code-block:: console
-
-    $ sudo mount -t cifs //<host_name>/<volume name> \
-        /mnt/<mount point> -o username=<username>,password=<password>
-
-**Notes:**
-
-* requires samba-common (debian/ubuntu)
-
-
-NFS
----------------------------------------
-
-.. code-block:: console
-
-    $ sudo mount -t nfs <server_ip>:/share_name \   - options (-o) sync|async
-        /mnt/<mount point>
-
-    $ showmount -e <server ip>                      - Export list for <server>
-
-**Notes:**
-
-* Requires nfs-common (debian/ubuntu)
-
-
-References
-=======================================
+**References:**
 
 #. `Linux IP Command Examples <https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax/>`_

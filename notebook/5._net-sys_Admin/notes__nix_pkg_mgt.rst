@@ -1,64 +1,47 @@
-.. _QQKO0h5RXx:
+.. _2Sg7VP8aSs:
 
 =======================================
-Linux - Debian
+NIX Package Mgt
 =======================================
 
-Releases
+APK
 =======================================
 
-Debian
----------------------------------------
+.. code-block:: console
 
- .. list-table::
-    :header-rows: 1
+    $ apk update
+    $ apk upgrade
+    $ apk add <package 1> <package 2>
+    $ apk del <package 1> <package 2>
 
-    * - Version
-      - Code Name
-    * - 9
-      - Stretch
-    * - 8
-      - Jessie
-    * - 7
-      - Wheezy
-    * - 6
-      - Squeeze
+    # Find Packages
+    $ apk search -v
+    $ apk search -v 'acf*'
+    $ apk search -v --description 'NTP'
 
-Ubuntu
----------------------------------------
+    # Install Packages From Pinned Repos
+    $ apk add stableapp newapp@edge bleedingapp@testing
 
- .. list-table::
-    :header-rows: 1
+    # Add A Local Package
+    $ apk add --allow-untrusted /path/to/file.apk
 
-    * - Version
-      - Code Name
-      - Short Name
-    * - 20.04 LTS
-      - Focal Fossa
-      - focal
-    * - 18.04 LTS
-      - Bionic Beaver
-      - bionic
-    * - 16.04 LTS
-      - Xenial Xerus
-      - xenial
-    * - 14.04 LTS
-      - Trusty Tahr
-      - trusty
+    # Install From Repos Not In /etc/apk/repositories
+    $ apk add cherokee --update-cache \
+                       --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+                       --allow-untrusted
+
+    # Save Changes
+    $ lbu commit -d
+
+**Notes:**
+
+#. Alpine running in ram disk mode does not restore packages installed from repos not in
+   /etc/apk/repositories
 
 
-Installation
+
+APT
 =======================================
-
-Management
-=======================================
-
-Packages
----------------------------------------
-
-
-Apt
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: console
 
@@ -85,7 +68,7 @@ Apt
 
 
 Nala
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------
 
 Nala is a front-end for libapt-pkg. Specifically we interface using the
 python-apt api.
@@ -103,9 +86,8 @@ package during install, removal, or an upgrade.
 * `APT sucks, use Nala instead! <https://youtu.be/skbE6U5uE3A>`_
 
 
-
 Snap
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=======================================
 
 Snaps are app packages for desktop, cloud and IoT that are easy to
 install, secure, cross‐platform and dependency‐free.
@@ -116,29 +98,6 @@ install, secure, cross‐platform and dependency‐free.
   $ sudo snap remove obs-studio
 
 
-Services
----------------------------------------
+**References:**
 
-SystemD
-
-.. code-block:: console
-
-    $ systemctl start <service>
-    $ systemctl stop <service>
-    $ systemctl enable <service>
-    $ systemctl disenable <service>
-    $ systemctl is-enabled <service>
-    $ systemctl daemon-reload                           # Use when you create or modify a service file
-    $ systemctl list-unit-files | grep enabled          # List all enabled services
-
-Service Files:
-
-* /etc/systemd/system
-* /etc/systemd/user
-
-
-References
-=======================================
-
-#. `Systemd For Upstart Users <https://wiki.ubuntu.com/SystemdForUpstartUsers>`_
 #. `How to remove a snap package on Ubuntu <https://linuxhint.com/remove-snap-package-ubuntu/>`_
