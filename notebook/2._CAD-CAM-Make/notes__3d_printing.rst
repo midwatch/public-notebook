@@ -21,6 +21,7 @@ Printers
 * `TOP 5 BEST METAL 3D PRINTERS <https://youtu.be/HT2aodYuKus>`_
 * `THE PERFECT 3D PRINTER FOR WARHAMMER 40K! <https://youtu.be/hivnFEiueyY>`_
 * `Elegoo Saturn 2 8K Resin 3D Printer <https://youtu.be/PFGrrfExsAM>`_
+* `How bad is a $95 3D Printer?? <https://youtu.be/M3SMUpNH_6I>`_
 
 
 Tutorials
@@ -33,3 +34,4 @@ Tutorials
 * `Why Resin 3D Prints Fail - Improve Your Prints <https://youtu.be/pbYAhjASGFY>`_
 * `SLA Resin Handling Guide for 3D Printing <https://youtu.be/onVNnRjbm5g>`_
 * `3D Printed Blasters Make Nerf Obsolete <https://youtu.be/zO6dmua_B0k>`_
+* `Texturing 3D Prints for Strength! <https://youtu.be/3-ygdNQThAs>`_
