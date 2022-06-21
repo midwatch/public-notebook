@@ -20,16 +20,31 @@ How the world ended:
 * Supernatural invasion
 
 
-Generation 0
+Eras
 =======================================
+
+Generation 0
+---------------------------------------
 
 In the Generation O era, several decades have passed since the apocalypse. The
 oldest survivors can call up childhood memories of the civilized era before the
 cataclysm, but most adults were born after the event.
 
 
+Books
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
+
+
+Films
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
+
+
 Dark Ages
-=======================================
+---------------------------------------
 
 In the Dark Ages era, many generations have passed since the apocalypse(at least
 a century, and perhaps several); knowledge of the preapoca- lyptic world has
@@ -38,10 +53,20 @@ mysteries, dangers, and occasionally treasures, but much of what is left behind
 is incomprehensible and useful only as raw materials. The world is a wild and
 savage place.
 
+Books
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
+
+
+Films
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
 
 
 New World
-=======================================
+---------------------------------------
 
 In the New World era, legends tell of an ancient civilization that was destroyed
 by its own hubris. In the centuries that have passed since, a new form of
@@ -49,6 +74,16 @@ civilization—primitive and barbaric though it may be—has begun to take root.
 The cities of the ancients are little more than worn-down monu- ments, and only
 the rarest of artifacts functions as it did in the time of the ancients.
 
+Books
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
+
+
+Films
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TBD
 
 
 References
