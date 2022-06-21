@@ -14,7 +14,12 @@ Videos
 
 - https://youtu.be/EKdSCIXaUGQ
 
+**How to Use D&D Town Generators**
+
+ - https://youtu.be/8agGB6ki5oM
 
 **Why the East Ends of (Most) Cities are Poorer**
 
 - https://youtu.be/my9fsBix630
+
+
