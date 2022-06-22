@@ -83,6 +83,7 @@ def build(ctx):
     Build html pages.
     """
     notebook_opts = (
+        '--prune _include',
         f'--template-dir {TEMPLATE_ROOT}',
         f'--template-name {TEMPLATE_NAME}',
         'notebook/',
