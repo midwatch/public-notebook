@@ -82,17 +82,23 @@ def build(ctx):
     """
     Build html pages.
     """
-    notebook_opts = (
-        '--prune _include',
-        f'--template-dir {TEMPLATE_ROOT}',
+    header = """::
+
+    Never memorize something that you can look up.
+
+                                   Albert Einstein
+    """
+    options = ' '.join((
         f'--template-name {TEMPLATE_NAME}',
+        '--title "Public Notebook"',
+        f'--header "{header}"',
         'notebook/',
         'build/rst/index.rst'
-        )
+        ))
 
     ctx.run('mkdir build')
     ctx.run('cp -r notebook build/rst')
-    ctx.run('sphinx_notebook build {}'.format(' '.join(notebook_opts)))
+    ctx.run(f'sphinx_notebook build {options}')
     ctx.run('sphinx-build -b html build/rst build/www')
 
 
