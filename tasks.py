@@ -82,16 +82,8 @@ def build(ctx):
     """
     Build html pages.
     """
-    header = """::
-
-    Never memorize something that you can look up.
-
-                                   Albert Einstein
-    """
     options = ' '.join((
         f'--template-name {TEMPLATE_NAME}',
-        '--title "Public Notebook"',
-        f'--header "{header}"',
         'notebook/',
         'build/rst/index.rst'
         ))
