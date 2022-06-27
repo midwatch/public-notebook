@@ -43,6 +43,12 @@ invalid.
 * `Gitub <https://github.com/samuelcolvin/pydantic>`_
 
 
+Tools
+=======================================
+
+#. `JSON to Pydantic <https://jsontopydantic.com/>`_
+
+
 Tutorials
 =======================================
 
