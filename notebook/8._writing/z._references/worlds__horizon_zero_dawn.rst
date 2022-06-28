@@ -4,6 +4,14 @@
 Horizon Zero Dawn
 =======================================
 
+Setting: Western US/New World
+
+Causes:
+
+* Rise of the machines
+* `Grey Goo <https://tvtropes.org/pmwiki/pmwiki.php/Main/GreyGoo>`_
+
+
 References
 =======================================
 
