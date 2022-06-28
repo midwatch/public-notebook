@@ -1,7 +1,7 @@
 .. _defMh1XbFu:
 
 =======================================
-Building
+Buildings
 =======================================
 
 `How Do Starbases Work? (Star Trek Science) <https://youtu.be/6wJdHSqFBMw>`_

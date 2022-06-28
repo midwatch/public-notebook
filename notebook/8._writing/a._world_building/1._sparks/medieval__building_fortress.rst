@@ -1,7 +1,7 @@
 .. _mM3T2Y7i75:
 
 =======================================
-Building/Fortress
+Buildings/Fortress
 =======================================
 
 `The Secrets Of Hever Castle: Home Of Anne Boleyn <https://youtu.be/5-UEXc4ZerA>`_

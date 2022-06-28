@@ -1,7 +1,7 @@
 .. _UEX09eE2a2:
 
 =======================================
-Building
+Buildings
 =======================================
 
 `Hypogeum: Malta's Ancient Subterreanean Mystery <https://youtu.be/qJOmDMHQby4>`_
