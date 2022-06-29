@@ -23,6 +23,8 @@ PIP
         --index-url <url> \
         <package>
 
+    $ python3 -m pip index versions <package>                   - list available versions of package
+
     $ echo $PIP_INDEX_URL="<url>"
     $ sudo -E python3 -m pip install <package>                  - install package from alternate index
 
