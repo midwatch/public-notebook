@@ -82,16 +82,15 @@ def build(ctx):
     """
     Build html pages.
     """
-    notebook_opts = (
-        f'--template-dir {TEMPLATE_ROOT}',
+    options = ' '.join((
         f'--template-name {TEMPLATE_NAME}',
         'notebook/',
         'build/rst/index.rst'
-        )
+        ))
 
     ctx.run('mkdir build')
     ctx.run('cp -r notebook build/rst')
-    ctx.run('sphinx_notebook build {}'.format(' '.join(notebook_opts)))
+    ctx.run(f'sphinx_notebook build {options}')
     ctx.run('sphinx-build -b html build/rst build/www')
 
 

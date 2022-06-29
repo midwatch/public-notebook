@@ -46,6 +46,22 @@ reStructuredText
           -
           - :ref:`Introduction <gtd-introduction>`
 
+    # Citations
+    # Are "global" and can be referenced from all files.
+
+    Lorem ipsum [CIT2002]_ dolor sit amet.
+
+    .. [CIT2002] This is the citation.  It's just like a footnote,
+       except the label is textual.
+
+    # Footnotes
+    Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_ ... Lorem ipsum [#f1]_
+
+    .. rubric:: Footnotes
+
+    .. [#f1] Text of the first footnote.
+    .. [#f2] Text of the second footnote.
+
 
 References
 =======================================
