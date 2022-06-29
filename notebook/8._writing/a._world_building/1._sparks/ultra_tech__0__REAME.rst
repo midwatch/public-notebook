@@ -4,4 +4,6 @@
 README
 =======================================
 
-aka Super Science; aka Applied Phlebotinum
+aka Super Science;
+aka `Applied Phlebotinum <https://tvtropes.org/pmwiki/pmwiki.php/Main/AppliedPhlebotinum>`_
+
