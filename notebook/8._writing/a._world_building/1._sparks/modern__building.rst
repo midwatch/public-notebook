@@ -17,6 +17,11 @@ Abandoned
 
 `Found Fully Stocked Fallout Shelter while Exploring a Massive Asylum Complex <https://youtu.be/mP7bro785hc>`_
 
+`Astonishing ABANDONED Florida Resort Near Disney <https://youtu.be/-hKvT2CS0L4>`_
+
+`Exploring an Abandoned Skyscraper from 1904 <https://youtu.be/reT1NHxQEhs>`_
+
+
 Housing
 =======================================
 
@@ -67,8 +72,20 @@ Warehouses
   stockpile of its 1.4 billion-pound surplus of cheese. (t=4:58, t=7:15)
 
 
+Labratory
+=======================================
+
+`The Slice of Mars 1km Under Northern England <https://youtu.be/RJ-RBf2DI7Q>`_
+
+
 Military
 =======================================
+
+Abandoned
+---------------------------------------
+
+`Mission To Deep Underground Bunker Complex with Power <https://youtu.be/4ZHDsaJG0EI>`_
+
 
 Bunkers
 ---------------------------------------

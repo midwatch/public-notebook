@@ -10,6 +10,8 @@ Fallout
 
 `Why Fallout's Society Doesn't Progress after 200 years <https://youtu.be/T_htyXPV-ho>`_
 
+`Why Bottle Caps as Currency Seems like a Bad Idea <https://youtu.be/hflLZcazPYk>`_
+
 
 References
 =======================================
