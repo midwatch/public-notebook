@@ -4,10 +4,6 @@
 README
 =======================================
 
-::
-
-    The street finds its own uses for things.
-
-                                   William Gibson
+The street finds its own uses for things. **William Gibson**
 
 aka kit bashing
