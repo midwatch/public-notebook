@@ -20,3 +20,4 @@ References
 ======================================
 
 #. `TURING PI 2 <https://turingpi.com/>`_
+#. `Raspberry Pi Blade crams 64 ARM cores and NVMe in 1U! <https://youtu.be/zH9GwYZu_aE>`_

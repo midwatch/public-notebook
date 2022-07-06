@@ -104,3 +104,54 @@ aka Synology Hybrid RAID
 
 * `What is Synology Hybrid RAID (SHR)? <https://kb.synology.com/en-br/DSM/tutorial/What_is_Synology_Hybrid_RAID_SHR>`_
 * `What is the difference between SHR and RAID? <https://nascompares.com/2016/07/06/what-is-shr-and-what-is-the-difference-between-synology-hybrid-raid-and-ordinary-raid/>`_
+
+
+Secure Delete
+=======================================
+
+Delete and overwrite hard drives to garuntee that the contents cannot be
+recovered.
+
+
+HDD
+---------------------------------------
+
+The shred command overwrites specified files repeatedly to make recovery
+extremely difficult to recover.
+
+.. code-block:: console
+
+  $ time shred -vfz /dev/<drive>
+
+
+**Notes:**
+
+a. It takes about 31 hours/tb when connected via USB3
+b. Do not use on SSD disks
+
+**References:**
+
+#. `How to Securely Delete Files on Linux <https://www.howtogeek.com/425232/how-to-securely-delete-files-on-linux/>`_
+#. `shred(1) — Linux manual page <https://man7.org/linux/man-pages/man1/shred.1.html>`_
+
+
+SDD
+---------------------------------------
+
+blkdiscard will discard all blocks on the device. Options may be used to modify
+this behavior based on range or size.
+
+The "secure erase" is the fastest way to make all content on SSD inaccessible and
+it's secure by specification not by accident.
+
+**Notes:**
+
+a. Secure erase and blkdiscard require that the device be connected via a SATA
+   controller and is unlikely to work via a USB to PATA/SATA Bridge
+
+
+**References:**
+
+#. `blkdiscard(8) — Linux manual page <https://man7.org/linux/man-pages/man8/blkdiscard.8.html>`_
+#. https://unix.stackexchange.com/questions/593181/is-shred-bad-for-erasing-ssds
+#. `ATA Secure Erase <https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase>`_

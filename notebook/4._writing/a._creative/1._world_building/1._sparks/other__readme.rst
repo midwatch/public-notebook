@@ -23,6 +23,9 @@ Everything else.
 Locations
 =======================================
 
+`Most ISOLATED Homes Around The World! <https://youtu.be/No5SU4eEIgs>`_
+
+
 Islands
 ---------------------------------------
 

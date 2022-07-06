@@ -25,6 +25,17 @@ Python packaging and dependency management made easy.
     $ poetry run pytest
 
 
+Notes:
+=======================================
+
+Poetry will try to find a common version of a dependency across all specified
+Python versions.
+
+    EX: we put python="*" in pyproject.py and it installed a very old version,
+    presumably 2.7 compliant, of a depencency that wouldn't work with our installed
+    environment.
+
+
 References:
 =======================================
 

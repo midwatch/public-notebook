@@ -1,7 +1,7 @@
 .. _uEJCtlATid:
 
 =======================================
-Raspberry PI
+SBC/Raspberry PI
 =======================================
 
 Hardware
@@ -209,6 +209,8 @@ Raspbian
 Community
 ======================================
 
+#. TBD
+
 Accessories
 ======================================
 
@@ -222,3 +224,4 @@ References
 #. `RPI GPIO Pinout <https://forum.pycom.io/topic/1519/power-up-wipy-from-raspberry-pi-3>`_
 #. `Using Console Cable <https://learn.adafruit.com/adafruits-raspberry-pi-lesson-5-using-a-console-cable/overview>`_
 #. `Everything you wanted to know about RPI GPIO <https://www.circuits.dk/everything-about-raspberry-gpio/>`_
+#. `Why are Industrial Pis so expensive? <https://youtu.be/9MqJI_F-sz8>`_

@@ -1,7 +1,7 @@
 .. _dyOKyfdhsh:
 
 =======================================
-Beaglebone Black
+SBC/Beaglebone
 =======================================
 
 Software
