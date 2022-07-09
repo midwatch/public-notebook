@@ -18,7 +18,7 @@ composable way with as little code as necessary.
 * `GitHub <https://github.com/pallets/click>`_
 
 
-Click
+Typer
 ---------------------------------------
 
 Typer, build great CLIs. Easy to code. Based on Python type hints.
