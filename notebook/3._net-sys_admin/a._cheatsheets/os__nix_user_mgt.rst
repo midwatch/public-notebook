@@ -1,7 +1,7 @@
 .. _pl4A7fhPns:
 
 =======================================
-NIX/User Mgt
+Linux/User Mgt
 =======================================
 
 .. code-block:: console

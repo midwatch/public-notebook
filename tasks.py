@@ -43,14 +43,13 @@ def build(ctx):
     Build html pages.
     """
     options = ' '.join((
-        f'--template-name {TEMPLATE_NAME}',
         'notebook/',
         'build/rst/index.rst'
         ))
 
     ctx.run('mkdir build')
     ctx.run('cp -r notebook build/rst')
-    ctx.run(f'sphinx_notebook build {options}')
+    ctx.run(f'sphinx_notebook build notebook/ build/rst/index.rst')
     ctx.run('sphinx-build -b html build/rst build/www')
 
 

@@ -1,2 +1,4 @@
 ---
-display_name: "8. CAD/CAM/DIY/MAKE"
+title: "8. CAD/CAM/DIY/MAKE"
+column_order: ["Cheatsheets", "Checklists", "Diy", "Make"]
+column_names: [["Diy", "DIY"]]
