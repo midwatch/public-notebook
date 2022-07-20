@@ -1,2 +1,3 @@
 ---
-display_name: "3. Net/Sys Admin"
+title: "3. Net/Sys Admin"
+column_order: ["Equipment", "Notes"]
