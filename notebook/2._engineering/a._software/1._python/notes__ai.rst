@@ -1,14 +1,13 @@
-.. _defMh1XbFu:
+.. _sDFN5e9s9V:
 
 =======================================
-Buildings
+Artificial Intelligence
 =======================================
 
-`How Do Starbases Work? (Star Trek Science) <https://youtu.be/6wJdHSqFBMw>`_
+`OpenCV Course - Full Tutorial with Python <https://youtu.be/oXlwWbU8l2o>`_
 
 
 References
 =======================================
 
 #. TBD
-

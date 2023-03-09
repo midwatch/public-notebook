@@ -86,6 +86,8 @@ Abandoned
 
 `Mission To Deep Underground Bunker Complex with Power <https://youtu.be/4ZHDsaJG0EI>`_
 
+`Affordable Abandoned Bunkers for Sale <https://youtu.be/cIB07tjJeu8>`_
+
 
 Bunkers
 ---------------------------------------

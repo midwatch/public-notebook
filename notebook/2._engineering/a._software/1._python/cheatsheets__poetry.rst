@@ -25,6 +25,25 @@ Python packaging and dependency management made easy.
     $ poetry run pytest
 
 
+Notes:
+=======================================
+
+Poetry will try to find a common version of a dependency across all specified
+Python versions.
+
+    EX: we put python="*" in pyproject.py and it installed a very old version,
+    presumably 2.7 compliant, of a depencency that wouldn't work with our installed
+    environment.
+
+Edit pyproject.toml to enable pip install -e .
+
+.. code-block:: text
+
+    [build-system]
+    requires = ["poetry-core>=1.0.8"]
+    build-backend = "poetry.core.masonry.api"
+
+
 References:
 =======================================
 
@@ -32,3 +51,4 @@ References:
 #. `Poetry - pyproject.toml <https://python-poetry.org/docs/pyproject/>`_
 #. `Clarifying PEP 518 (a.k.a. pyproject.toml) <https://snarky.ca/clarifying-pep-518/>`_
 #. `What the heck is pyproject.toml? <https://snarky.ca/what-the-heck-is-pyproject-toml/>`_
+#. `pip install -e . equivalent <https://github.com/python-poetry/poetry/issues/34#issuecomment-1054626460>`_

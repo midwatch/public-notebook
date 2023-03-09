@@ -17,6 +17,8 @@ Aircraft
 
 `America's First Black Helicopter - The Vietnam War's Stealth Helicopter <https://youtu.be/qzkrW27c4h8>`_
 
+`Yakovlev M-501 - The BIGGEST Piston Radial Ever Designed <https://youtu.be/AG8iloB3ptE>`_
+
 Drones
 ---------------------------------------
 

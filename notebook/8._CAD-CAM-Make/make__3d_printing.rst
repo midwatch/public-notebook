@@ -35,3 +35,5 @@ Tutorials
 * `SLA Resin Handling Guide for 3D Printing <https://youtu.be/onVNnRjbm5g>`_
 * `3D Printed Blasters Make Nerf Obsolete <https://youtu.be/zO6dmua_B0k>`_
 * `Texturing 3D Prints for Strength! <https://youtu.be/3-ygdNQThAs>`_
+* `Never print a purge block again! <https://youtu.be/olXqJadb6BM>`_
+* `Building a Large Format 3D Printer – Part 4: Printing <https://youtu.be/s27CzktFDCg>`_

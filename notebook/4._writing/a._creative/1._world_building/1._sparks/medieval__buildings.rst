@@ -16,6 +16,8 @@ Fortress
 
 `A Thousand Years of European Castles <https://youtu.be/uXSFt-zey84>`_
 
+`Harlech Castle: Wales' Mighty Medieval Fortress <https://youtu.be/YlDOJ4u4tUU>`_
+
 
 References
 =======================================

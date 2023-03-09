@@ -1,11 +1,14 @@
 .. _jy7PsXCIA0:
 
 =======================================
-Linux Distros
+Linux
+=======================================
+
+Distributions
 =======================================
 
 Alpine
-=======================================
+---------------------------------------
 
 Small size distro that's heavily used in app containers and a true read-only
 file system that's used in embedded devices.
@@ -23,7 +26,7 @@ file system that's used in embedded devices.
 
 
 Debian
-=======================================
+---------------------------------------
 
 .. list-table::
    :header-rows: 1
@@ -48,7 +51,7 @@ Debian
 
 
 Rocky
-=======================================
+---------------------------------------
 
 Rocky Linux is an open-source enterprise operating system designed to be 100%
 bug-for-bug compatible with Red Hat Enterprise Linux.
@@ -57,7 +60,7 @@ bug-for-bug compatible with Red Hat Enterprise Linux.
 
 
 Ubuntu
-=======================================
+---------------------------------------
 
 .. list-table::
    :header-rows: 1
